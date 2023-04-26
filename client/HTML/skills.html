@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Скрыль Никита, М33081, сайт, портфолио">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<header class="page_nav">
+    <script src="../js/menu.js" type="text/javascript"></script>
+</header>
+
+<section class="content__page" id="portfolio">
+    <h2>Мое портфолио</h2>
+    <ul class = "line__height__portfolio">
+        <li class = "list__description">Языки программирования: <b>Python 3.x</b>, <b>C#</b></li>
+        <li class = "list__description">Библиотеки: sklearn, pandas, numpy, <b>TensorFlow</b></li>
+        <li class = "list__description">Прочее: VK API, Excel, ООП, Алгоритмы и структуры данных, SQL</li>
+    </ul>
+
+    <h4>Мои мини-проекты</h4>
+    <ol class = "line__height__portfolio">
+        <li class = "list__description">Simpson's characters classification</li>
+        <li class = "list__description">VK-online tracking with VK API</li>
+        <li class = "list__description">HoMM-like game on <b>C#</b></li>
+    </ol>
+
+    <h4>Мой код</h4>
+    <pre>
+                <code>
+                    X_train, X_test, y_train, y_test = train_test_split(X,Y,test_size=0.2, random_state=42 )
+                    pf = PolynomialFeatures(degree)
+                    X_pf_train = pf.fit_transform(X_train)
+                    X_pf_test = pf.fit_transform(X_test)
+                    model = LinearRegression()
+                    model.fit(X_pf_train, y_train)
+                    Y_pf_train_preds = model.predict(X_pf_train)
+                    Y_pf_test_preds = model.predict(X_pf_test)
+                </code>
+            </pre>
+</section>
+
+</body>
+<footer>
+
+
+    <script src="../js/loadtime.js" type="text/javascript"></script>
+    <div id="time"></div>
+</footer>
+</html>

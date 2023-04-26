@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Скрыль Никита, М33081, сайт, портфолио">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/loadlocalStorage.js" type="text/javascript" defer></script>
+    <script src="../js/form.js" type="text/javascript" defer></script>
+</head>
+<body>
+<header class="page_nav">
+    <script src="../js/menu.js" type="text/javascript"></script>
+</header>
+<section class="content__page">
+    <div class="constructor">
+        <div class="constructor__form">
+            <form class="constructor__form_wrapper" onsubmit="return false">
+                <div class="constructor__form_wrapper__block">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" required>
+                </div >
+                <div class="constructor__form_wrapper__block">
+                    <label for="lastName">Фамилия</label>
+                    <input type="text" id="lastName" required>
+                </div>
+                <div class="constructor__form_wrapper__block">
+                    <label for="group">Группа</label>
+                    <select id="group" required>
+                        <option>Выберете группу</option>
+                        <option value="M33011">M33011</option>
+                        <option value="M33021">M33021</option>
+                        <option value="M33031">M33031</option>
+                        <option value="M33041">M33041</option>
+                        <option value="M33051">M33051</option>
+                        <option value="M33061">M33061</option>
+                        <option value="M33071">M33071</option>
+                        <option value="M33081">M33081</option>
+                        <option value="M33091">M33091</option>
+                        <option value="M33101">M33101</option>
+                        <option value="M33111">M33111</option>
+                        <option value="M33121">M33121</option>
+                    </select>
+                </div>
+                <button class="constructor__form_wrapper__block" type="submit" id="send">Отправить</button>
+            </form>
+        </div>
+
+        <div class="constructor__table">
+            <table>
+                <thead>
+                <tr id="notdel">
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Группа</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+        </div>
+        <template id="template">
+            <tr>
+                <td id="template_name"></td>
+                <td id="template_lastname"></td>
+                <td id="template_group"></td>
+            </tr>
+        </template>
+    </div>
+</section>
+</body>
+<footer>
+    <script src="../js/loadtime.js" type="text/javascript"></script>
+    <div id="time"></div>
+</footer>
+</html>
